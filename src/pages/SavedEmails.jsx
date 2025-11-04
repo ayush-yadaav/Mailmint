@@ -3,6 +3,7 @@ import { Mail, Trash2, Copy, Calendar, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import toast from "react-hot-toast";
 import Navigation from "../components/Navbar"; // ✅ Navbar Added
+import { Link } from "react-router-dom";
 
 const SavedEmails = () => {
   const [emails, setEmails] = useState([]);
@@ -56,11 +57,11 @@ const SavedEmails = () => {
               No saved emails yet
             </p>
             <button
-              onClick={() => (window.location.href = "/dashboard")}
+            
               className="px-6 py-3 bg-primary text-white rounded-xl hover:opacity-90 transition"
             >
-              Generate New Email
-            </button>
+               <Link to="/dashboard">Generate New Email</Link>
+            </button> 
           </motion.div>
         ) : (
           <div className="grid md:grid-cols-2 gap-6">

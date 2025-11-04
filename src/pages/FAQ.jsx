@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HelpCircle, Sparkles, Shield, Zap, ChevronDown } from "lucide-react";
 import Navigation from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -121,11 +122,11 @@ const FAQ = () => {
             <p className="text-muted-foreground mb-6">
               We're here to assist you with any questions or concerns
             </p>
-            <a href="/contact">
+            
               <button className="px-6 py-3 bg-primary text-white rounded-lg hover:shadow-glow transition-all">
-                Contact Us
+                 <Link to="/contact" > Contact Us</Link>
               </button>
-            </a>
+           
           </div>
         </div>
       </main>
