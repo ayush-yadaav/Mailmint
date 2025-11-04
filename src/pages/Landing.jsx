@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Sparkles, Shield, Clock } from "lucide-react";
 import Navigation from "../components/Navbar";
 import heroImage from "../assets/hero-bg.jpg";
+import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
@@ -144,6 +145,8 @@ const Landing = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

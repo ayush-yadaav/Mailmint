@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Target, Sparkles, Heart } from "lucide-react";
 import Navigation from "../components/Navbar";
 import aiVisual from "../assets/ai-visual.jpg";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
@@ -128,6 +129,7 @@ const About = () => {
           </div>
         </motion.div> */}
       </main>
+        <Footer />
     </div>
   );
 };

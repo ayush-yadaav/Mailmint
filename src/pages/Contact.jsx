@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import { motion } from "framer-motion";
 import { Mail, Send, MessageSquare } from "lucide-react";
 import Navigation from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -80,7 +81,7 @@ const Contact = () => {
                       name="name"
                       required
                       placeholder="John"
-                      className="w-full p-3 border border-border rounded-xl bg-transparent focus:ring-2 focus:ring-primary text-white transition-all"
+                      className="w-full p-3 border border-border rounded-xl bg-transparent focus:ring-2 focus:ring-primary text-black transition-all"
                     />
                   </div>
                   <div className="flex-1">
@@ -92,7 +93,7 @@ const Contact = () => {
                       name="lastName"
                       required
                       placeholder="Doe"
-                      className="w-full p-3 rounded-lg bg-transparent border border-border focus:ring-2 focus:ring-primary text-white transition-all"
+                      className="w-full p-3 rounded-lg bg-transparent border border-border focus:ring-2 focus:ring-primary text-black transition-all"
                     />
                   </div>
                 </div>
@@ -107,7 +108,7 @@ const Contact = () => {
                     name="email"
                     required
                     placeholder="you@example.com"
-                    className="w-full p-3 rounded-lg bg-transparent border border-border focus:ring-2 focus:ring-primary text-white transition-all"
+                    className="w-full p-3 rounded-lg bg-transparent border border-border focus:ring-2 focus:ring-primary text-black transition-all"
                   />
                 </div>
 
@@ -120,7 +121,7 @@ const Contact = () => {
                     name="message"
                     required
                     placeholder="Your message..."
-                    className="w-full p-3 rounded-lg bg-transparent border border-border focus:ring-2 focus:ring-primary text-white h-32 resize-none transition-all"
+                    className="w-full p-3 rounded-lg bg-transparent border border-border focus:ring-2 focus:ring-primary text-black h-32 resize-none transition-all"
                   />
                 </div>
 
@@ -180,6 +181,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

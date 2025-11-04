@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HelpCircle, Sparkles, Shield, Zap, ChevronDown } from "lucide-react";
 import Navigation from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -128,6 +129,7 @@ const FAQ = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
