@@ -50,7 +50,7 @@ const Footer = () => {
 
          <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-center text-sm text-muted-foreground">
          
-          <p>© {new Date().getFullYear()} GenEmail. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} MailMint. All rights reserved.</p>
         </div>
         </div>
 
